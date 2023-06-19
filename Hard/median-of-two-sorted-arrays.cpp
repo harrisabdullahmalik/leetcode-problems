@@ -1,3 +1,11 @@
+/* Given two sorted arrays nums1 and nums2 of size m and n respectively, 
+*  return the median of the two sorted arrays.
+*/
+
+#include <iostream>
+#include <vector>
+using namespace std;
+
 class Solution {
 public:
     double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
@@ -50,3 +58,15 @@ public:
         }
     }
 };
+
+int main() {
+    Solution code;
+    vector<int> nums1 = {1, 2}, nums2 = {3, 4};
+    double median;
+
+    median = code.findMedianSortedArrays(nums1, nums2);
+    
+    cout << "Median of two sorted arrays is: " << median;
+    
+    return 0;
+}

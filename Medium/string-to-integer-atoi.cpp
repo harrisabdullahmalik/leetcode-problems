@@ -1,3 +1,13 @@
+/* Implement the myAtoi(string s) function, which converts a string to a 32-bit signed integer 
+*  (similar to C/C++'s atoi function).
+*/
+
+#include <iostream>
+#include <vector>
+#include <string>
+#include <cmath>
+using namespace std;
+
 class Solution {
 public:
     int myAtoi(string s) {
@@ -80,3 +90,15 @@ public:
         return int(integer) * n;
     }
 };
+
+int main() {
+    Solution code;
+    string s = "4193 with words";
+    int output_integer;
+
+    output_integer = code.myAtoi(s);
+
+    cout << "The output of the string \"" << s << "\" passed to the function is: " << output_integer << endl;
+
+    return 0;
+}
