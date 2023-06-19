@@ -1,3 +1,11 @@
+/* Given an integer x, return true if x is a palindrome, and false otherwise.
+*  But without converting the integer to string
+*/
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+
 class Solution {
 public:
     int intLength(int x) {
@@ -24,3 +32,20 @@ public:
     return true;
     }
 };
+
+int main() {
+    Solution code;
+    int x = 121;
+    bool palindrome;
+
+    palindrome = code.isPalindrome(x);
+    
+    if (palindrome) {
+        cout << "The integer " << x << " is a Palindrome" << endl;
+    }
+    else {
+        cout << "The integer " << x << " is not a Palindrome" << endl;
+    }
+    
+    return 0;
+}

@@ -1,3 +1,11 @@
+/* Given an array of unique integers salary where salary[i] is the salary of the ith employee.
+*  Return the average salary of employees excluding the minimum and maximum salary. 
+*/
+
+#include <iostream>
+#include <vector>
+using namespace std;
+
 class Solution {
 public:
     double average(vector<int>& salary) {
@@ -23,3 +31,15 @@ public:
         return total / (salary.size() - 2);        
     }
 };
+
+int main() {
+    Solution code;
+    vector<int> salary = {4000, 3000, 1000, 2000};
+    double average;
+
+    average = code.average(salary);
+
+    cout << "The average of the salaries is: " << average << endl;
+
+    return 0;
+}
